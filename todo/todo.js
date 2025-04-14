@@ -20,7 +20,6 @@ function loadTasks() {
   const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
   tasks.forEach((task, index) => renderTask(task.text, task.completed, index));
 }
-
 function saveTasks() {
   const tasks = [];
   document.querySelectorAll("li").forEach((li) => {

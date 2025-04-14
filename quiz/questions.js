@@ -9,6 +9,10 @@ const questions = {
         question: "What is 9 x 3?",
         options: ["27", "18", "21", "24"],
         answer: "27"
+      },{
+        question: "what is 9 x 9?",
+        options:["99", "88", "81","66"],
+        answer:"81"
       }
     ],
     science: [
