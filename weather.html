@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="weather/weather.css">
+  <title>Hu-Tool-Kit-Weather</title>
+</head>
+<body>
+  <button class="toggle-btn" onclick="toggleDarkMode()">🌙</button>
+  <a href="index.html">Home</a>
+  <div class="weather-container">
+    <h1>Ethiopian Weather App</h1>
+    <select id="citySelect">
+        <option value="Addis Ababa">Addis Ababa</option>
+        <option value="Dire Dawa">Dire Dawa</option>
+        <option value="Mek'ele">Mek'ele</option>
+        <option value="Bahir Dar">Bahir Dar</option>
+        <option value="Hawassa">Hawassa</option>
+        <option value="Adama">Adama</option>
+        <option value="Jijiga">Jijiga</option>
+        <option value="Gondar">Gondar</option>
+        <option value="Sodo">Sodo</option>
+        
+    </select>
+    <button onclick="getWeather()">Get Weather</button>
+
+    <div class="result" id="weatherResult"></div>
+  </div>
+
+  <script src="weather/weather.js"></script>
+</body>
+</html>

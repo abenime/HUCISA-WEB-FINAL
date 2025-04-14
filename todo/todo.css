@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+:root {
+  --bg: #eef2f3;
+  --text: #111;
+  --card-bg: #fff;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #f1f1f1;
+  --card-bg: #1e1e1e;
+  --shadow: rgba(255, 255, 255, 0.05);
+}
+a{
+  text-decoration: none;
+  color: var(--text);
+}
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'poppins' ;
+    background-color: var(--bg);
+    padding: 2rem;
+    color: var(--text)
+  }
+
+  h1 {
+    text-align: center;
+    margin: 10px;
+  }
+
+  .todo-container {
+    width: 500px;
+    background:var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+  }
+
+  input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  input[type="text"]:focus-visible{
+    outline: none;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 16px;
+    margin-left: 5px;
+    cursor: pointer;
+    background: var(--bg);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border: none;
+    color: var(--text);
+    border-radius: 6px;
+  }
+  button:hover{
+    background-color: var(--card-bg)
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  li {
+    font-family: 'poppins';
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: var(--bg);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  li.completed span {
+    text-decoration: line-through;
+    color: gray;
+  }
+
+  .actions button {
+    background: var(--card-bg);
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 10px;
+  }
+  .actions button:hover{
+    background-color: var(--bg);
+  }
+  .toggle-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }

@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --bg: rgb(230, 233, 247);
+    --text: #111;
+    --card-bg: #fff;
+    --shadow: rgba(0, 0, 0, 0.1);
+  }
+
+  body.dark {
+    --bg: #121212;
+    --text: #f1f1f1;
+    --card-bg: #1e1e1e;
+    --shadow: rgba(255, 255, 255, 0.05);
+  }
+  a{
+    text-decoration: none;
+    color: var(--text);
+  }
+  
+  body {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: 'poppins';
+    background: var(--bg);
+    color: var(--text);
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  .weather-container {
+    width: 500px;
+    margin: 0 auto;
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px var(--shadow);
+    transition: background 0.3s ease;
+  }
+
+  select, button {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 6px;
+    border: none;
+  }
+
+  .result {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  .result span {
+    font-weight: bold;
+  }
+
+  .toggle-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }

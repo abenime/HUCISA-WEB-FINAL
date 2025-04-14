@@ -1,21 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="quizz.css">
-    <title>Quiz</title>
+  <meta charset="UTF-8" />
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="quiz/quizz.css" />
 </head>
 <body>
-    <div class="intr-bdy">
-        <h1>Take Software-Quizes</h1>
-        <div class="optn-btns">
-            <button>Networking</button>
-            <button>Java</button>
-            <button>Operating System</button>
-            <button>Data Structure & algorithm</button>
-        </div>
-        
+  <a href="index.html">Home</a>
+  <div class="bdy">
+    <h1>Quiz App</h1>
+
+    <div class="slct" id="subjectSelection">
+      <h3>Select a Subject to take quiz</h3>
+      <div class="subject-buttons">
+        <button onclick="startQuiz('math')">Math</button>
+        <button onclick="startQuiz('science')">Science</button>
+        <button onclick="startQuiz('history')">History</button>
+        <button onclick="startQuiz('english')">English</button>
+      </div>
     </div>
+
+    <div class="question-box" style="display:none">
+        <div class="quiz-header">
+          <p id="timer"></p>
+        </div>
+        <p class="question" id="questionText"></p>
+        <div class="options" id="optionsContainer"></div>
+        <button id="backBtn" class="back-btn" onclick="goBack()" style="display:none">← Back to Subjects</button>
+      </div>
+      
+      <div id="result"></div>
+      
+  </div>
+
+  <script src="quiz/questions.js"></script>
+  <script src="quiz/quizz.js"></script>
 </body>
 </html>

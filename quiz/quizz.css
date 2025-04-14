@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'poppins','Segoe UI';
+  background-color: rgb(230, 233, 247);
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color: var(--text);
+}
+.bdy {
+  font-family: inherit;
+  width: 500px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.slct{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.subject-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.subject-buttons button {
+  font-family: 'poppins';
+  font-weight: 600;
+  margin: 10px;
+  padding: 12px 20px;
+  font-size: 16px;
+  background: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 150px;
+}
+
+.subject-buttons button:hover {
+  background:  rgb(230, 233, 247);
+}
+
+.question-box {
+  margin-top: 20px;
+}
+
+.quiz-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+#timer {
+  font-weight: bold;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  border-radius: 5px;
+  background-color:rgb(230, 233, 247) ;
+
+}
+
+.question {
+  font-family: 'poppins';
+  font-weight: 600;
+  font-family: inherit;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.options button {
+  font-family: 'poppins';
+  font-weight: 600;
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  font-size: 16px;
+  border-radius: 6px;
+  background: aliceblue;
+  border: 1px solid #84c5fe;
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.options button:hover {
+  color: #004085;
+  background: #cce5ff;
+  border: 1px solid #b8daff;
+}
+
+.options button.correct {
+  color: #155724 ;
+  background: #d4edda !important;
+  border: 1px solid #c3e6cb;
+}
+
+.options button.incorrect {
+  color: #721c24;
+  background: #f8d7da !important;
+  border: 1px solid #f5c6cb;
+}
+
+#result {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #ddd;
+}
+.back-btn {
+  margin-top: 20px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background 0.2s;
+  background-color:white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.back-btn:hover {
+  background-color: rgb(230, 233, 247);
+}
+  
