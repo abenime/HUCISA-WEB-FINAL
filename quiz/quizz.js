@@ -4,7 +4,20 @@ let score = 0;
 let timer;
 let timeLeft = 20;
 let userAnswers = [];
+function toggleDarkMode() {
+  document.body.classList.toggle("dark");
+  const icon = document.querySelector(".toggle-btn");
+  icon.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
+  localStorage.setItem("darkMode", document.body.classList.contains("dark"));
+}
 
+function loadTheme() {
+  const isDark = localStorage.getItem("darkMode") === "true";
+  if (isDark) {
+    document.body.classList.add("dark");
+    document.querySelector(".toggle-btn").textContent = "☀️";
+  }
+}
 function startQuiz(subject) {
   if (!questions[subject]) {
     alert("Invalid subject selected.");
@@ -114,3 +127,4 @@ function finishQuiz() {
 
 
 }
+loadTheme();

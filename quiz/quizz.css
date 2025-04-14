@@ -3,6 +3,23 @@
     margin: 0;
     box-sizing: border-box;
 }
+:root {
+  --bg: rgb(230, 233, 247);
+  --text: #111;
+  --card-bg: #fff;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #f1f1f1;
+  --card-bg: #1e1e1e;
+  --shadow: rgba(255, 255, 255, 0.05);
+}
+a{
+  text-decoration: none;
+  color: var(--text);
+}
 
 body {
   height: 100vh;
@@ -11,28 +28,26 @@ body {
   justify-content: center;
   flex-direction: column;
   font-family: 'poppins','Segoe UI';
-  background-color: rgb(230, 233, 247);
+  background-color:var(--bg);
   margin: 0;
   padding: 0;
-}
-a{
-  text-decoration: none;
-  color: var(--text);
+  transition: all 0.3s;
 }
 .bdy {
   font-family: inherit;
   width: 500px;
-  margin: 40px auto;
-  background: white;
+  background: var(--card-bg);
   padding: 30px;
   border-radius: 12px;
+  color: var(--text);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 h1 {
   text-align: center;
   margin-bottom: 20px;
-  color: #333;
+  color: var(--text);
+
 }
 
 .slct{
@@ -54,17 +69,17 @@ h1 {
   margin: 10px;
   padding: 12px 20px;
   font-size: 16px;
-  background: white;
+  background: var(--bg);
+  color: var(--text);
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: 0.2s;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   width: 150px;
 }
 
 .subject-buttons button:hover {
-  background:  rgb(230, 233, 247);
+  background:  var(--card-bg);
 }
 
 .question-box {
@@ -81,8 +96,9 @@ h1 {
   font-weight: bold;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 5px;
+  color: var(--text);
   border-radius: 5px;
-  background-color:rgb(230, 233, 247) ;
+  background-color:var(--bg) ;
 
 }
 
@@ -92,7 +108,7 @@ h1 {
   font-family: inherit;
   font-size: 20px;
   margin-bottom: 10px;
-  color: #333;
+  color: var(--text);
 }
 
 .options button {
@@ -103,28 +119,28 @@ h1 {
   margin: 8px 0;
   font-size: 16px;
   border-radius: 6px;
-  background: aliceblue;
-  border: 1px solid #84c5fe;
+  border: none;
+  background: var(--bg);
   cursor: pointer;
+  color: var(--text);
   transition: 0.2s;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .options button:hover {
-  color: #004085;
-  background: #cce5ff;
-  border: 1px solid #b8daff;
+  color:var(--text);
+  background: var(--card-bg);
 }
 
 .options button.correct {
   color: #155724 ;
-  background: #d4edda !important;
+  background: #81db96 !important;
   border: 1px solid #c3e6cb;
 }
 
 .options button.incorrect {
   color: #721c24;
-  background: #f8d7da !important;
+  background: #f7acb3 !important;
   border: 1px solid #f5c6cb;
 }
 
@@ -141,11 +157,20 @@ h1 {
   cursor: pointer;
   font-size: 15px;
   transition: background 0.2s;
-  background-color:white;
+  background-color:var(--bg);
+  color: var(--text);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .back-btn:hover {
-  background-color: rgb(230, 233, 247);
+  background-color: var(--card-bg);
 }
-  
+.toggle-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
