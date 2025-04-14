@@ -102,7 +102,6 @@ function finishQuiz() {
   backButton.onclick = goBack;
   document.getElementById("result").appendChild(backButton);
 
-  // Save to localStorage
   const stored = JSON.parse(localStorage.getItem("quizResults") || "[]");
   stored.push({
     date: new Date().toLocaleString(),

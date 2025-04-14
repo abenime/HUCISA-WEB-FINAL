@@ -21,12 +21,13 @@
     text-decoration: none;
     color: var(--text);
   }
-  
+
   body {
     height: 100vh;
     justify-content: center;
     align-items: center;
     display: flex;
+    flex-direction: column;
     font-family: 'poppins';
     background: var(--bg);
     color: var(--text);
