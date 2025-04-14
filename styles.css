@@ -66,6 +66,7 @@ a{
     font-family: inherit;
     font-weight: 500;
     cursor: pointer;
+    color: var(--text);
     background-color: var(--bg);
 }
 

@@ -1,0 +1,10 @@
+.navbar{
+    display: flex;
+    justify-content: right;
+    width: 500px;
+}
+.navbar a{
+    background-color: var(--card-bg);
+    padding: 5px;
+
+}
