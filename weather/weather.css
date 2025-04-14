@@ -27,23 +27,23 @@
     justify-content: center;
     align-items: center;
     display: flex;
-    flex-direction: column;
-    font-family: 'poppins';
-    background: var(--bg);
-    color: var(--text);
-    padding: 2rem;
-    text-align: center;
+    background-color: var(--bg);
+    font-family: 'poppins' ;
     transition: all 0.3s ease;
+    color: var(--text);
   }
 
   .weather-container {
-    width: 500px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 540px;
     background: var(--card-bg);
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 5px 15px var(--shadow);
-    transition: background 0.3s ease;
+    transition: all 0.3s ease;
   }
 
   select, button {

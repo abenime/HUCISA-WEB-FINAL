@@ -1,10 +1,11 @@
 .navbar{
     display: flex;
-    justify-content: right;
-    width: 500px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 .navbar a{
-    background-color: var(--card-bg);
-    padding: 5px;
-
+    padding-bottom: 5px;
+    padding-right: 5px;
 }
